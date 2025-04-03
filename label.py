@@ -3,8 +3,19 @@ from openai import OpenAI
 
 def get_sentiment(text: list) -> list:
     """
-    INSERT DOCSTRING HERE
+    Get the sentiment given a list of text representing the reviews.
+
+    Args:
+        text (list): a list of reviews in string.
+    Returns:
+        list: a list of sentiments of the corresponding reviews.
     """
+    if len(text) == 0:
+        return "Wrong input. text must be an array of strings."
+    for t in text:
+        if type(t) != str:
+            return "Wrong input. text must be an array of strings."
+        
     system_prompt = """
     ...
     """
@@ -16,4 +27,5 @@ def get_sentiment(text: list) -> list:
     Use only a one-word response per line. Do not include any numbers.
     {text}
     """
+
     pass

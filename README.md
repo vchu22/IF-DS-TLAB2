@@ -54,7 +54,7 @@ conda env config vars set OPENAI_API_KEY="your_api_key"
 
 4) Deactivate and reactive your environment by running the following commands in your terminal
 ```bash
-conda deactivate ds
+conda deactivate
 conda activate ds
 ```
 
