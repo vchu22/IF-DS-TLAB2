@@ -18,7 +18,6 @@ def get_sentiment(text: list) -> list:
         
     system_prompt = """
     You are tasked with reading a list of strings representing the customers' reviews for a product and produce a list of sentiments with only three possible values: "negative", "neutral", "positive", and "irrelevant". For example, given the input list below:
-    ```
     [
     "this ring smells weird, don't recomend",
     "I love this ring, I use it all the time when working out.",
@@ -27,11 +26,9 @@ def get_sentiment(text: list) -> list:
     "its a ring",
     "Bought this ring and it came broken. rip-off."
     ]
-    ```
+
     the output should be:
-    ```
     ["negative", "positive", "positive", "neutral", "irrelevant", "negative"]
-    ```
     """
 
     prompt = f"""
