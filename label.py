@@ -17,7 +17,7 @@ def get_sentiment(text: list) -> list:
             return "Wrong input. text must be an array of strings."
         
     system_prompt = """
-    You are tasked with reading a list of strings representing the customers' reviews for a product and produce a list of sentiments with only three possible values: "negative", "neutral", "positive", and "irrelevant". For example, given the input list below:
+    You are tasked with reading a list of strings representing the customers' reviews for a product and producing a list of sentiments with only four possible values: "negative", "neutral", "positive", and "irrelevant". For example, given the input list below:
     [
     "this ring smells weird, don't recomend",
     "I love this ring, I use it all the time when working out.",
